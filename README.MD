@@ -14,7 +14,7 @@ CrypTon is a Quantum Key Distribution system which uses randomly generated quant
 ## 📚Tech Stack
 <p align='center'>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" height=1200px width=auto>
-<img src="https://img.shields.io/badge/QisKit-5FA04E?style=for-the-badge&logo=python&logoColor=white" height=1200px width=auto>
+<img src="https://img.shields.io/badge/QisKit-5FA04E?style=for-the-badge" height=1200px width=auto>
 </p>
 
 --- 
@@ -24,6 +24,8 @@ CrypTon is a Quantum Key Distribution system which uses randomly generated quant
 #### Cloning the Google Colab
 ```bash
 Open the Google Colab and clone the QKD.ipynb
+Connect to CPU runtime (You can use GPU or TPU or any other runtime suitable as per your needs)
+Click Run All
 ```
 
 ---
@@ -45,3 +47,4 @@ Stay curious.
 [GitHub](https://github.com/Vishesh-Goyal7) | [LinkedIn](https://linkedin.com/in/vishesh-goyal-2k5) | [Personal Portfolio](https://visheshverse.com)
 
 ---
+
