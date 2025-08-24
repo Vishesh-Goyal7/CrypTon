@@ -14,5 +14,6 @@ CrypTon is a Quantum Key Distribution system which uses randomly generated quant
 ## 📚Tech Stack
 <p align='center'>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" height=1200px width=auto>
-<img src="https://img.shields.io/badge/QisKit-3776AB?style=for-the-badge&logo=python&logoColor=white" height=1200px width=auto>
+<img src="https://img.shields.io/badge/QisKit-5FA04E?style=for-the-badge&logo=python&logoColor=white" height=1200px width=auto>
 </p>
+
