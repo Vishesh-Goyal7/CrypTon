@@ -1,0 +1,35 @@
+20-08-2025 12:59:26 Project Start
+
+Problem Statement : 
+While AES and DES are widely used symmetric encryption algorithms, their security fundamentally relies on the secrecy and randomness of the shared encryption keys. However, classical methods of key generation and distribution are vulnerable to interception, prediction, and cryptanalytic attacks—especially in the face of advancing quantum computing capabilities. This project proposes a hybrid cryptographic model that enhances AES and DES encryption by integrating quantum key generation and quantum key distribution protocols using Qiskit. Specifically, we simulate the BB84 protocol for secure key exchange between communicating parties and use a quantum random number generator (QRNG) to produce high-entropy encryption keys. The goal is to demonstrate that quantum-assisted key handling can significantly improve the confidentiality and unpredictability of AES and DES encryption without modifying their core architecture. By leveraging quantum mechanics principles such as no-cloning and measurement collapse, the project aims to fortify classical encryption systems against present and future threats, including quantum-enabled adversaries.
+
+Plan : 
+1) Phase 1 : Baseline step to create working AES and DES encryption functions using Python
+2) Phase 2 : Simulate quantum key generation using Quantum Random Number Generator (QRNG)
+3) Phase 3 : Simulate BB84 protocol between Alice and Bob for secure key agreement
+4) Phase 4 : Replace classical random keys with quantum-generated/distributed keys
+5) Phase 5 : Show the difference and benefit of quantum-generated keys
+
+Project Activated : 
+
+Phase 1 : 24-08-2025 13:13:04
+    1) Building and verifying an AES and DES encryption, decryption algorithm to test the QKD later on. 
+    2) Successful completion at 24-08-202 14:18:28
+
+Phase 2 : 24-08-2025 14:21:24
+    1) Creating a random 128 bit string. For this, we initialise a quantum circuit having 128 qubits and apply hadamard gate to each of them. Then, we measure them and each qubit falls to either 0 or 1 with a 50% probability creating a random string
+    2) Successful completion at 24-08-2025 14:46:16
+
+Phase 3 : 24-08-2025 14:47:11
+    1) In this phase, we try to create a safe channel between Alice and Bob to share their quantum generated keys using BB84 protocol. 
+    2) Alice and Bob create their own random bases. Alice creates a random qubit string which she encodes using her bases and shares it to Bob. 
+    3) Bob measures this encoded qubit string using his base. 
+    4) Then these people share the bases over a common, authenticated channel. The bit place at which bases match are kept and the other are discarded. 
+    5) If an interceptor is present, they will guess their own base but in the process randomise the things in the qubit. This interceptor can guess each bit correctly with a 50% probability and the bit at that position with 50% probability, so it can be correct 25% probability which becomes the threshold. 
+    6) In an ideal scenario with no noise, even 1% error marks an intruder. But there can be noise interference so we keep it to 25%.
+    7) One small problem, since we start with a big number of bits but discard when doing the basis match, we might not have enough quantum bits to perform the AES or decryption algorithm. So, we mitigate that in the next phase by calling BB84 as many times as required to get the least number of qubits. 
+    8) Successful completion at 24-08-2025 15:32:15
+
+Phase 4 : 24-08-2025 21:14:22
+    1) Just used the keys generated above for AES and DES encryption with some more checks and balances. 
+    2) Successful completion at 24-08-2025 22:44:19
