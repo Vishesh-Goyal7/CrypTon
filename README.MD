@@ -40,16 +40,17 @@ MIT License © 2025 VisheshVerse
 ---
 ## 🙋‍♂️ Author
 
-This project represents days of engineering, experimentation, and perseverance. If SkillAI helped you, inspired you, or made you think — I’d love to hear from you.
+This project represents hours of engineering, experimentation, and perseverance. If CrypTon helped you, inspired you, or made you think — I’d love to hear from you.
 
 Feel free to ⭐ the repo or connect with me at visheshvishu1@outlook.com
 
-Stay curious.
+And until next time, stay curious.
 
 **Vishesh Goyal**  
-[GitHub](https://github.com/Vishesh-Goyal7) | [LinkedIn](https://linkedin.com/in/vishesh-goyal-2k5) | [Personal Portfolio](https://visheshverse.com)
+[GitHub](https://github.com/Vishesh-Goyal7) | [Personal Portfolio](https://visheshverse.com)
 
 ---
+
 
 
 
