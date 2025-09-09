@@ -33,3 +33,34 @@ Phase 3 : 24-08-2025 14:47:11
 Phase 4 : 24-08-2025 21:14:22
     1) Just used the keys generated above for AES and DES encryption with some more checks and balances. 
     2) Successful completion at 24-08-2025 22:44:19
+
+
+Showed this to Jaya Krishna sir. New suggestions : 
+    1) Compare how this system will react to different key sizes
+    2) Compare how well does this system encrypt and decrypt files of different sizes (10KB, 100KB, 1MB)
+    3) Compare how better or worse this system is compared to existing classical cryptography. 
+
+Phase 5 : 07-09-2025 15:13:07
+    1) In this phase, we generate random payloads of 10KB, 100KB and 1MB. We also use generate keys of 128, 192 and 512 bytes for both classical and quantum key generation. Then, we compare the data. 
+    2) Results found : 
+        2.1) Speed : 
+             AES encryption and decryption time is same since that itself is a classical step. Key generation makes any difference in the speeds of the system. For classical, speed is very fast, almost milliseconds. In quantum, key generation takes longer time, around 40 - 110 seconds
+
+             So, classical wins here
+        
+        2.2) Security : 
+             Classical technique is vulnerable to quantum attacks since they depend solely on mathematical assumptions and randomness. Quantum serves as a better alternate since it is based on laws of physics, provides eavesdrop protection and is resistant to quantum computer attacks. 
+
+             So, quantum eats and leaves no crumbs
+
+        2.3) Accuracy : 
+             We are improvising key generation and distribution. Since we are not making any changes to the AES techniques in any case, both of them have same accuracy, reliability and integration. 
+
+             So, there is no difference in these. 
+
+        2.4) Scalability : 
+             Classical is already very well adopted and used all across the globe. So, it is already scaled. For the quantum, due to the underdeveloped quantum hardware technology, the system is not scalable as of now. 
+
+             So, classical is already steps ahead and working better. 
+
+    3) Successful completion at 08-09-2025 21:14:19
